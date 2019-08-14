@@ -62,36 +62,26 @@ public class AddToCartPage {
 		cart.newadd1.sendKeys("Magarpatta");
 		cart.code.sendKeys("440010");
 		cart.mob.sendKeys("9734219038");
-//		Thread.sleep(1000);
-//		driver.findElement(By.xpath("//div[@id='billing-buttons-container']//input[@value='Continue']")).click();
-//		Thread.sleep(1000);
-//		driver.findElement(By.xpath("//div[@id='shipping-buttons-container']//input[@value='Continue']")).click();
-//		Thread.sleep(1000);
-//		driver.findElement(By.id("shippingoption_0")).click();
-//		driver.findElement(By.xpath("//div[@id='shipping-method-buttons-container']//input[@value='Continue']"))
-//				.click();
-//		Thread.sleep(1000);
-//		driver.findElement(By.id("paymentmethod_0")).click();
-//		driver.findElement(By.xpath("//div[@id='payment-method-buttons-container']//input[@value='Continue']")).click();
-////		  Thread.sleep(1000);
-////		  driver.findElement(By.id("CardholderName")).sendKeys("Barbara Gordon");
-////		  driver.findElement(By.id("CardNumber")).sendKeys("4485564059489345");
-////		  Select dropdown1 = new Select(driver.findElement(By.id("ExpireMonth")));
-////		  dropdown1.selectByVisibleText("04");
-////		  Select dropdown2 = new Select(driver.findElement(By.id("ExpireYear")));
-////		  dropdown2.selectByVisibleText("2020");
-////		  driver.findElement(By.id("CardCode")).sendKeys("123");
-//		Thread.sleep(1000);
-//		driver.findElement(By.xpath("//div[@id='payment-method-buttons-container']//input[@value='Continue']")).click();
-//		Thread.sleep(1000);
-//		driver.findElement(By.xpath("//div[@id='payment-info-buttons-container']//input[@value='Continue']")).click();
-//		driver.findElement(By.xpath("//input[@value='Confirm']")).click();
-//		Thread.sleep(2000);
+		cart.Continue1.click();
+		Thread.sleep(1000);
+		cart.Continue2.click();
+		Thread.sleep(1000);
+		cart.Continue3.click();
+		Thread.sleep(1000);
+		cart.payment.click();
+		Thread.sleep(1000);
+		cart.Continue4.click();
+		Thread.sleep(1000);
+		cart.Continue5.click();
+		Thread.sleep(1000);
+		cart.Confirm.click();
 	}
 
 	@Then("^The product should be delivered to new address$")
 	public void the_product_should_be_delivered_to_new_address() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
+		System.out.println("Product is delivered");
+		driver.close();
 	}
 
 }

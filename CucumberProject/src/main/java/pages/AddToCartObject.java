@@ -49,6 +49,30 @@ public class AddToCartObject {
 	@FindBy(id="BillingNewAddress_PhoneNumber")
 	public WebElement mob;
 	
+	@FindBy(xpath="//div[@id='billing-buttons-container']//input[@value='Continue']")
+	public WebElement Continue1;
+	
+	@FindBy(xpath="//div[@id='shipping-buttons-container']//input[@value='Continue']")
+	public WebElement Continue2;
+	
+
+	@FindBy(xpath="//div[@id='shipping-method-buttons-container']//input[@value='Continue']")
+	public WebElement Continue3;
+	
+	@FindBy(id="paymentmethod_0")
+	public WebElement payment;
+	
+	
+	@FindBy(xpath="//div[@id='payment-method-buttons-container']//input[@value='Continue']")
+	public WebElement Continue4;
+	
+	
+	@FindBy(xpath="//div[@id='payment-info-buttons-container']//input[@value='Continue']")
+	public WebElement Continue5;
+	
+	@FindBy(xpath="//input[@value='Confirm']")
+	public WebElement Confirm;
+			
 	
 	
 }
