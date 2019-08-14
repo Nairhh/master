@@ -21,18 +21,7 @@ public class LoginPageObject {
 	
 	@FindBy(xpath="//input[@value='Log in']")
 	public WebElement loginbutton;
-	
-	@FindBy(linkText="Apparel & Shoes")
-	public  WebElement linkclick;
-	
-	@FindBy(linkText="Casual Golf Belt")
-	public  WebElement selectProd;
-	
-	@FindBy(id="add-to-cart-button-40")
-	public  WebElement addtocart;
-	
-	@FindBy(className="ico-cart")
-	public WebElement gotocart;
+
 	
 	
 }

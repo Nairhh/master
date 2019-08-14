@@ -16,7 +16,7 @@ public class LoginPage {
 		// Write code here that turns the phrase above into concrete actions
 
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver.exe");
-		driver = new ChromeDriver();
+//		driver = new ChromeDriver();
 
 		driver.get("http://demowebshop.tricentis.com/login");
 		driver.manage().window().maximize();
