@@ -22,7 +22,7 @@ public class AddToCartObject {
 	@FindBy(className="ico-cart")
 	public WebElement gotocart;
 	
-	@FindBy(xpath="//input[@name='itemquantity911537']")
+	@FindBy(xpath="//input[starts-with(@name,'itemquantity')]")
 	public WebElement changeQty;
 	
 	@FindBy(id="termsofservice")
